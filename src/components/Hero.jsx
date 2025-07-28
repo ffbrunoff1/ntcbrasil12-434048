@@ -48,7 +48,7 @@ export default function Hero() {
               variants={itemVariants}
             >
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-blue-dark">
-                Soluções em drenagem
+                Construcao legal
               </span>
             </motion.h1>
             <motion.p
