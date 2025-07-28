@@ -1,16 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-
 export default function Hero() {
   const heroImageUrl =
     'https://qotdwocbcoirjlqjkjhq.supabase.co/storage/v1/object/public/imagens.website.creation/construction-hero-image.jpg';
-
   const scrollToContact = e => {
     e.preventDefault();
     document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
   };
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -21,7 +18,6 @@ export default function Hero() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -33,7 +29,6 @@ export default function Hero() {
       },
     },
   };
-
   return (
     <section
       id="hero"
@@ -52,9 +47,8 @@ export default function Hero() {
               className="text-4xl md:text-6xl font-extrabold text-brand-dark leading-tight mb-6"
               variants={itemVariants}
             >
-              Construindo o futuro com{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-brand-blue-dark">
-                excelência e inovação.
+                Soluções em drenagem
               </span>
             </motion.h1>
             <motion.p
@@ -85,7 +79,7 @@ export default function Hero() {
             <img
               src={heroImageUrl}
               alt="Equipe de construção analisando planta de um projeto"
-              className="relative w-full h-auto rounded-2xl shadow-medium object-cover"
+              className="relative z-10 w-full h-auto rounded-2xl shadow-medium object-cover"
               style={{ maxHeight: '500px' }}
             />
           </motion.div>
